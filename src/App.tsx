@@ -49,7 +49,7 @@ function App() {
  
 
   return (
-    <div className='app'>
+    <div className='principal'>
       <Header onTransactionCreated={fetchData}/> 
       <main className="main-container">
         <Summary summary={summaryData}/>
