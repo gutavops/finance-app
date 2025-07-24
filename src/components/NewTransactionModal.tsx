@@ -45,7 +45,7 @@ export function TransactionModal({ onTransactionCreated }: TransactionModalProps
         };
 
         try{
-            const response = await axios.post<NewTransactionData>('http://localhost:3101/api/transaction', transaction)
+            const response = await axios.post<NewTransactionData>('https://finance-api-sbeo.onrender.com/api/transactions', transaction)
 
             if (!response) {
                 throw new Error("Erro ao cadastrar usuário");
